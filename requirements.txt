@@ -1,0 +1,9 @@
+Django==1.10.3
+image==1.5.5
+Pillow==3.4.2
+PyAutoGUI==0.9.33
+PyMsgBox==1.0.3
+PyScreeze==0.1.8
+python-xlib==0.17
+PyTweening==1.0.3
+six==1.10.0
