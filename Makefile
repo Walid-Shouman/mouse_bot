@@ -1,6 +1,9 @@
 help:	## Show this help.
 		@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 
+freeze:	## Freeze currently installed packages into requirements.txt
+	pip freeze > requirements.txt
+
 init:	## Install requirements
 	pip install -r requirements.txt
 
