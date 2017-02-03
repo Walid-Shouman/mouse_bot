@@ -5,6 +5,16 @@
 ## Usage
 - For using a 0.1min of mouse movement execute the following ```python mouse_bot.py --time=.1```
 
+## Documentation
+- Documentation is built with Sphinx, module indexing is done with autodoc
+
+### Steps For Regenerating Docs
+- Goto ```doc/sphinx``` directory.  
+- Clean previous documentation with ```make clean```.  
+- Generate the api-docs for the new module(s) with ```sphinx-apidoc -o . ../../```.  
+- We need all the .rst files except for the ```modules.rst```, move all of them to the ```doc/sphinx/source``` directory except for the ```modules.rst```, move it to the trash for now.
+- Rebuild the documentation with ```make clean```
+
 ## Learning History
 - Virtualenv
 - Pip requirements
